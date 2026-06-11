@@ -3713,6 +3713,10 @@ figcaption {
 
 .logo-image {
   height: var(--24px);
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  display: block;
 }
 
 .menu-navigation {
@@ -4449,10 +4453,14 @@ figcaption {
 }
 
 .brand-logo-text {
-  font: inherit;
+  font-family: "Generic G20-FR Classic", "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
   color: currentColor;
-  letter-spacing: inherit;
-  line-height: inherit;
+  letter-spacing: 0;
+  line-height: 1.1;
+  display: block;
+  max-width: 220px;
   white-space: nowrap;
   text-transform: none;
 }
@@ -4460,17 +4468,41 @@ figcaption {
 .menu-logo {
   color: var(--black);
   text-decoration: none;
+  max-width: 100%;
 }
 
 .footer .brand-logo-text {
   color: var(--white);
 }
 
+.footer .menu-logo {
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .menu-logo::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-image: url("../media/wabe-logo.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: none;
+}
+
 @media screen and (max-width: 991px) {
   .brand-logo-text {
     max-width: 150px;
     white-space: normal;
-    line-height: inherit;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .logo-image {
+    max-width: 130px;
   }
 }
 
