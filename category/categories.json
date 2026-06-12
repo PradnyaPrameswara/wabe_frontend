@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "id": "mystic-garden",
+      "title": "Mystic Garden",
+      "description": "Here, you'll find an array of exclusive drops and limited-edition releases that stand at the forefront of contemporary trends. From cutting-edge fashion to the latest gadgets, our selections are designed to captivate and inspire. These collections are not just products; they are unique experiences crafted for those who appreciate the essence of exclusivity and desire to stay ahead of the curve. Keep an eye on this space for the newest, most sought-after items that you won't find anywhere else!",
+      "products": ["celestial-serving-platter"]
+    },
+    {
+      "id": "oceans-embrace",
+      "title": "Ocean's Embrace",
+      "description": "Here, you'll find an array of exclusive drops and limited-edition releases that stand at the forefront of contemporary trends. From cutting-edge fashion to the latest gadgets, our selections are designed to captivate and inspire. These collections are not just products; they are unique experiences crafted for those who appreciate the essence of exclusivity and desire to stay ahead of the curve. Keep an eye on this space for the newest, most sought-after items that you won't find anywhere else!",
+      "products": []
+    },
+    {
+      "id": "rustic-elegance",
+      "title": "Rustic Elegance",
+      "description": "Here, you'll find an array of exclusive drops and limited-edition releases that stand at the forefront of contemporary trends. From cutting-edge fashion to the latest gadgets, our selections are designed to captivate and inspire. These collections are not just products; they are unique experiences crafted for those who appreciate the essence of exclusivity and desire to stay ahead of the curve. Keep an eye on this space for the newest, most sought-after items that you won't find anywhere else!",
+      "products": ["cascade-water-pitcher"]
+    },
+    {
+      "id": "sunrise-symphony",
+      "title": "Sunrise Symphony",
+      "description": "Here, you'll find an array of exclusive drops and limited-edition releases that stand at the forefront of contemporary trends. From cutting-edge fashion to the latest gadgets, our selections are designed to captivate and inspire. These collections are not just products; they are unique experiences crafted for those who appreciate the essence of exclusivity and desire to stay ahead of the curve. Keep an eye on this space for the newest, most sought-after items that you won't find anywhere else!",
+      "products": [
+        "eclipse-coffee-cup",
+        "harmony-dinner-plate",
+        "aurora-tea-mug",
+        "nebula-salad-bowl",
+        "meadow-dessert-plate"
+      ]
+    },
+    {
+      "id": "tranquil-ripples",
+      "title": "Tranquil Ripples",
+      "description": "Here, you'll find an array of exclusive drops and limited-edition releases that stand at the forefront of contemporary trends. From cutting-edge fashion to the latest gadgets, our selections are designed to captivate and inspire. These collections are not just products; they are unique experiences crafted for those who appreciate the essence of exclusivity and desire to stay ahead of the curve. Keep an eye on this space for the newest, most sought-after items that you won't find anywhere else!",
+      "products": ["serenity-soup-bowl"]
+    },
+    {
+      "id": "whispering-earth",
+      "title": "Whispering Earth",
+      "description": "Here, you'll find an array of exclusive drops and limited-edition releases that stand at the forefront of contemporary trends. From cutting-edge fashion to the latest gadgets, our selections are designed to captivate and inspire. These collections are not just products; they are unique experiences crafted for those who appreciate the essence of exclusivity and desire to stay ahead of the curve. Keep an eye on this space for the newest, most sought-after items that you won't find anywhere else!",
+      "products": ["whimsy-candle-holder", "eden-flower-vase"]
+    }
+  ]
+}

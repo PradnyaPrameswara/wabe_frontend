@@ -1,4 +1,26 @@
 (() => {
+  const AUTH_USERS_KEY = "wabe_user_accounts";
+  const AUTH_SESSION_KEY = "wabe_user_session";
+  const safeStorageParse = (key, fallback) => {
+    try {
+      const value = window.localStorage.getItem(key);
+      return value ? JSON.parse(value) : fallback;
+    } catch {
+      return fallback;
+    }
+  };
+  const getStoredUsers = () => safeStorageParse(AUTH_USERS_KEY, []);
+  const getAuthSession = () => safeStorageParse(AUTH_SESSION_KEY, null);
+  const isUserLoggedIn = () => Boolean(getAuthSession()?.email);
+
+  window.WABE_AUTH = {
+    usersKey: AUTH_USERS_KEY,
+    sessionKey: AUTH_SESSION_KEY,
+    getUsers: getStoredUsers,
+    getSession: getAuthSession,
+    isLoggedIn: isUserLoggedIn,
+  };
+
   const getPageContext = () => {
     const script =
       document.querySelector('script[src$="assets/js/site.js"]') ||
@@ -18,21 +40,20 @@
       navCurrent = "home";
     } else if (filename === "about.html") {
       navCurrent = "about";
+    } else if (filename === "contact-us.html") {
+      navCurrent = "contact";
     } else if (filename === "collections.html") {
       navCurrent = "collections";
     } else if (filename === "journal.html" || inJournalSection) {
       navCurrent = "journal";
-    } else if (filename === "shop-02.html") {
-      navCurrent = "shop-v2";
-    } else if (filename === "shop.html") {
-      navCurrent = "shop-v1";
+    } else if (filename === "shop.html" || filename === "shop-02.html") {
+      navCurrent = "shop";
     }
 
     return {
       basePrefix,
       filename,
       navCurrent,
-      includeShopV2: filename !== "shop.html",
       legalCurrent: inLegalSection ? filename : "",
       legalPrefix: inLegalSection ? "./" : `${basePrefix}legal/`,
     };
@@ -44,6 +65,38 @@
     isCurrent ? ' aria-current="page" class="navigation-link inline-block is-current"' : ' class="navigation-link inline-block"';
   const buildFooterCurrentAttrs = (isCurrent) =>
     isCurrent ? ' aria-current="page" class="footer-link inline-block is-current"' : ' class="footer-link inline-block"';
+
+  const buildGuestAccountMarkup = (basePrefix) => `
+          <a
+            aria-label="Login or register"
+            class="navigation-link inline-block profile-login-link"
+            href="${buildPageHref(basePrefix, "login.html")}"
+          >
+            <span class="profile-login-icon" aria-hidden="true">
+              <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+                <path d="M4 21C4 17.6863 7.58172 15 12 15C16.4183 15 20 17.6863 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+              </svg>
+            </span>
+          </a>
+  `;
+
+  const buildLoggedInUserMarkup = (basePrefix) => `
+          <a
+            aria-label="Logout"
+            class="navigation-link inline-block profile-login-link"
+            href="#"
+            onclick="window.localStorage.removeItem('wabe_user_session'); window.location.href='${buildPageHref(basePrefix, "login.html")}'; return false;"
+          >
+            <span class="profile-login-icon" aria-hidden="true">
+              <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+                <path d="M16 17L21 12L16 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+                <path d="M21 12H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+              </svg>
+            </span>
+          </a>
+  `;
 
   const buildCartMarkup = (basePrefix) => `
           <div class="shop-cartwrapper cart" data-open-product="">
@@ -255,12 +308,15 @@
           </div>
   `;
 
+  const buildHeaderActionMarkup = (basePrefix) =>
+    isUserLoggedIn() ? `${buildCartMarkup(basePrefix)}\n${buildLoggedInUserMarkup(basePrefix)}` : `${buildCartMarkup(basePrefix)}\n${buildGuestAccountMarkup(basePrefix)}`;
+
   const buildNavigationLinks = (context) => {
     const links = [
       {
-        current: context.navCurrent === "shop-v1",
+        current: context.navCurrent === "shop",
         href: buildPageHref(context.basePrefix, "shop.html"),
-        label: "Shop V1",
+        label: "Shop",
       },
     ];
 
@@ -271,14 +327,14 @@
         label: "Collections",
       },
       {
-        current: context.navCurrent === "journal",
-        href: buildPageHref(context.basePrefix, "journal.html"),
-        label: "Journal",
-      },
-      {
         current: context.navCurrent === "about",
         href: buildPageHref(context.basePrefix, "about.html"),
         label: "About",
+      },
+      {
+        current: context.navCurrent === "contact",
+        href: buildPageHref(context.basePrefix, "contact-us.html"),
+        label: "Contact Us",
       }
     );
 
@@ -303,7 +359,7 @@
       <div class="desktop-navigation">
         <div class="menu-navigation">
           ${buildNavigationLinks(context)}
-${buildCartMarkup(context.basePrefix)}
+${buildHeaderActionMarkup(context.basePrefix)}
         </div>
       </div>
       <a class="mobile-menu-icon inline-block" href="#"
@@ -325,7 +381,7 @@ ${buildCartMarkup(context.basePrefix)}
       <div class="mobile-menu-container">
         <div class="menu-navigation">
           ${buildNavigationLinks(context)}
-${buildCartMarkup(context.basePrefix)}
+${buildHeaderActionMarkup(context.basePrefix)}
         </div>
       </div>
     </div>`;
@@ -764,6 +820,16 @@ ZW|Zimbabwe
   const getMappedCatalogName = (productName) =>
     PRODUCT_CATALOG_MAP[normalizeText(productName)] || "";
 
+  const getAvailableShopCatalogs = () => {
+    const mappedCatalogs = new Set(
+      Object.values(PRODUCT_CATALOG_MAP)
+        .map((name) => normalizeText(name))
+        .filter(Boolean)
+    );
+
+    return SHOP_CATALOGS.filter((catalog) => mappedCatalogs.has(catalog.name));
+  };
+
   const applyMappedCatalogLabels = () => {
     document.querySelectorAll(".product-wrapper-item").forEach((card) => {
       const title = normalizeText(
@@ -793,6 +859,64 @@ ZW|Zimbabwe
     }
   };
 
+  const initLinkedProductCards = () => {
+    const shouldPreserveNativeNavigation = (event) => {
+      if (!event) return false;
+      if ("button" in event && event.button !== 0) return true;
+      return Boolean(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey);
+    };
+
+    const navigateToProductHref = (event, href) => {
+      if (!href || event.defaultPrevented || shouldPreserveNativeNavigation(event)) return;
+      window.location.href = href;
+    };
+
+    document.querySelectorAll(".product-wrapper-item").forEach((card) => {
+      if (!card.dataset.productHref) {
+        const primaryProductLink = card.querySelector(".product-item[href]");
+        const productHref = primaryProductLink?.getAttribute("href");
+        if (productHref) {
+          card.dataset.productHref = productHref;
+        }
+      }
+
+      if (!card.dataset.productHref || card.dataset.linkCardBound === "true") return;
+
+      card.dataset.linkCardBound = "true";
+      card.classList.add("is-linked-product-card");
+      card.setAttribute("role", card.getAttribute("role") || "link");
+
+      if (!card.hasAttribute("tabindex")) {
+        card.tabIndex = 0;
+      }
+
+      card
+        .querySelectorAll(".product-item[href] .image-container, .product-item[href] .product-image")
+        .forEach((node) => {
+          if (node.dataset.productImageLinkBound === "true") return;
+          node.dataset.productImageLinkBound = "true";
+          node.addEventListener("click", (event) => {
+            navigateToProductHref(event, card.dataset.productHref);
+          });
+        });
+
+      card.addEventListener("click", (event) => {
+        if (event.defaultPrevented) return;
+        if (event.target.closest("a, button, input, select, textarea, label")) return;
+        navigateToProductHref(event, card.dataset.productHref);
+      });
+
+      card.addEventListener("keydown", (event) => {
+        if (event.defaultPrevented) return;
+        if (event.key !== "Enter" && event.key !== " ") return;
+        if (event.target.closest("a, button, input, select, textarea, label")) return;
+
+        event.preventDefault();
+        window.location.href = card.dataset.productHref;
+      });
+    });
+  };
+
   const buildCatalogLinkMarkup = (catalog) =>
     `<a class="shop-catalog-link inline-block" href="./shop.html?catalog=${encodeURIComponent(
       catalog.slug
@@ -804,13 +928,17 @@ ZW|Zimbabwe
     const filterList = document.querySelector(".laundry-list-wrapper.collection-items");
     if (!filterList) return;
 
+    const pathname = (window.location.pathname || "").toLowerCase();
+    const isShopV1Page = pathname.endsWith("shop.html");
+    const catalogs = isShopV1Page ? getAvailableShopCatalogs() : SHOP_CATALOGS;
+
     const filterHeading = document.querySelector(".filter-title h6");
     if (filterHeading) {
       filterHeading.textContent = "Filter by Catalog";
     }
 
     filterList.classList.add("catalog-filter-list");
-    filterList.innerHTML = SHOP_CATALOGS.map(
+    filterList.innerHTML = catalogs.map(
       (catalog) => `
         <div class="laundry-list-item collection-item" role="listitem">
           <a class="filter-list inline-block" href="./shop.html?catalog=${encodeURIComponent(
@@ -1024,7 +1152,17 @@ ZW|Zimbabwe
 
     productCards.forEach((card, index) => {
       card.classList.toggle("is-wide", wideCardIndexes.has(index % pageSize));
+
+      if (!card.dataset.searchText) {
+        card.dataset.searchText = card.textContent.toLowerCase();
+      }
     });
+
+    initLinkedProductCards();
+
+    const availableCatalogSlugs = new Set(
+      productCards.map((card) => card.dataset.catalogSlug).filter(Boolean)
+    );
 
     const emptyState = document.createElement("div");
     emptyState.className = "shop-search-empty";
@@ -1039,6 +1177,7 @@ ZW|Zimbabwe
           ...(url.searchParams.get("catalogs") || "").split(","),
         ]
           .map((value) => findCatalogBySlug(value)?.slug || "")
+          .filter((value) => availableCatalogSlugs.has(value))
           .filter(Boolean)
       )
     );
@@ -1200,6 +1339,7 @@ ZW|Zimbabwe
       link.addEventListener("click", (event) => {
         event.preventDefault();
         const nextCatalog = link.getAttribute("data-catalog") || "";
+        if (!availableCatalogSlugs.has(nextCatalog)) return;
         activeCatalogs = activeCatalogs.includes(nextCatalog)
           ? activeCatalogs.filter((catalog) => catalog !== nextCatalog)
           : [...activeCatalogs, nextCatalog];
@@ -1349,7 +1489,159 @@ ZW|Zimbabwe
     select.dataset.optionsLoaded = "true";
   };
 
+  const authApi = window.WABE_AUTH || {
+    usersKey: "wabe_user_accounts",
+    sessionKey: "wabe_user_session",
+    getUsers: () => [],
+    getSession: () => null,
+    isLoggedIn: () => false,
+  };
+
+  const writeStoredUsers = (users) =>
+    window.localStorage.setItem(authApi.usersKey, JSON.stringify(users));
+
+  const writeAuthSession = (session) =>
+    window.localStorage.setItem(authApi.sessionKey, JSON.stringify(session));
+
+  const clearAuthSession = () => window.localStorage.removeItem(authApi.sessionKey);
+
+  const getPostAuthRedirect = () => {
+    const fallback = "./shop.html";
+    const redirectValue = new URL(window.location.href).searchParams.get("redirect");
+    if (!redirectValue) return fallback;
+    if (/^(?:https?:)?\/\//i.test(redirectValue)) return fallback;
+    if (redirectValue.startsWith("//")) return fallback;
+    return redirectValue;
+  };
+
+  const initAuthPages = () => {
+    const loginForm = document.querySelector("[data-auth-login-form]");
+    const registerForm = document.querySelector("[data-auth-register-form]");
+    const status = document.querySelector("[data-auth-status]");
+    const accountPanel = document.querySelector("[data-auth-account-panel]");
+    const accountEmail = document.querySelector("[data-auth-account-email]");
+    const logoutButton = document.querySelector("[data-auth-logout]");
+    const testLoginButton = document.querySelector("[data-auth-test-login]");
+    const signedIn = authApi.getSession();
+
+    const setStatus = (message, kind = "") => {
+      if (!status) return;
+      status.textContent = message;
+      status.className = `auth-status${kind ? ` is-${kind}` : ""}`;
+    };
+
+    if (accountPanel) {
+      if (signedIn?.email) {
+        accountPanel.hidden = false;
+        if (accountEmail) {
+          accountEmail.textContent = signedIn.email;
+        }
+      } else {
+        accountPanel.hidden = true;
+      }
+    }
+
+    document.querySelectorAll("[data-password-toggle]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-password-target") || "";
+        const input = document.getElementById(targetId);
+        if (!input) return;
+
+        const shouldShow = input.getAttribute("type") === "password";
+        input.setAttribute("type", shouldShow ? "text" : "password");
+        button.setAttribute(
+          "aria-label",
+          shouldShow ? "Hide password" : "Show password"
+        );
+      });
+    });
+
+    logoutButton?.addEventListener("click", () => {
+      clearAuthSession();
+      window.location.href = "./login.html";
+    });
+
+    testLoginButton?.addEventListener("click", () => {
+      writeAuthSession({
+        name: "Test User",
+        email: "test-user@widhiasihbaliexport.com",
+        phone: "",
+        company: "",
+      });
+      setStatus("Test login successful. Redirecting...", "success");
+      window.location.href = getPostAuthRedirect();
+    });
+
+    loginForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(loginForm);
+      const email = normalizeText(formData.get("email")).toLowerCase();
+      const password = String(formData.get("password") || "");
+      const user = authApi
+        .getUsers()
+        .find((entry) => normalizeText(entry.email).toLowerCase() === email);
+
+      if (!user || user.password !== password) {
+        setStatus("Email or password is incorrect.", "error");
+        return;
+      }
+
+      writeAuthSession({
+        name: user.name,
+        email: user.email,
+        phone: user.phone || "",
+        company: user.company || "",
+      });
+      setStatus("Login successful. Redirecting...", "success");
+      window.location.href = getPostAuthRedirect();
+    });
+
+    registerForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(registerForm);
+      const name = normalizeText(formData.get("name"));
+      const email = normalizeText(formData.get("email")).toLowerCase();
+      const phone = normalizeText(formData.get("phone"));
+      const company = normalizeText(formData.get("company"));
+      const password = String(formData.get("password") || "");
+      const confirmPassword = String(formData.get("confirm_password") || "");
+      const users = authApi.getUsers();
+
+      if (!name || !email || !phone || !password) {
+        setStatus("Please complete all required fields.", "error");
+        return;
+      }
+
+      if (password.length < 6) {
+        setStatus("Password must be at least 6 characters.", "error");
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        setStatus("Password confirmation does not match.", "error");
+        return;
+      }
+
+      const emailExists = users.some(
+        (entry) => normalizeText(entry.email).toLowerCase() === email
+      );
+
+      if (emailExists) {
+        setStatus("An account with that email already exists.", "error");
+        return;
+      }
+
+      const nextUser = { name, email, phone, company, password };
+      writeStoredUsers([...users, nextUser]);
+      writeAuthSession({ name, email, phone, company });
+      setStatus("Registration successful. Redirecting...", "success");
+      window.location.href = getPostAuthRedirect();
+    });
+  };
+
   applyMappedCatalogLabels();
+  initLinkedProductCards();
+  initAuthPages();
   renderDrawerCatalogFilters();
   renderCollectionsCatalog();
   removeNotifySalesButtons();

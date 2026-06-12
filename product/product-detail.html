@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Product Detail | Widhi Asih Bali Export</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../assets/css/site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/layout-overrides.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../assets/media/6a2680f03f3745a0ac723d08_Favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/media/6a2680f03f3745a0ac723d09_Webclip.png"
+      rel="apple-touch-icon"
+    />
+  </head>
+  <body>
+    <div data-shared-layout="desktop-menu"></div>
+    <div data-shared-layout="mobile-menu"></div>
+
+    <div class="global-css-styles embed-block">
+      <style>
+        .product-wrapper-item {
+          flex-grow: 1;
+          flex-shrink: 0;
+          flex-basis: calc((100% - (4 * 16px)) / 6);
+        }
+
+        .product-wrapper-item:nth-child(3),
+        .product-wrapper-item:nth-child(5),
+        .product-wrapper-item:nth-child(7),
+        .product-wrapper-item:nth-child(9) {
+          flex-grow: 1;
+          flex-shrink: 0;
+          flex-basis: calc(((100% - (4 * 16px)) / 6) * 1.5);
+        }
+
+        .truncate {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .select-field {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-image: url("../assets/media/65758c0babe35789fbfd9897_Chevron--down.svg");
+          background-position: right 12px center;
+          background-repeat: no-repeat;
+          background-size: 8px;
+          padding-right: 20px;
+        }
+
+        option {
+          background-color: #f0f0f0;
+          color: #333;
+        }
+
+        @media (max-width: 768px) {
+          .product-wrapper-item {
+            flex-basis: calc((100% - 16px) / 2);
+          }
+
+          .product-wrapper-item:nth-child(3),
+          .product-wrapper-item:nth-child(5),
+          .product-wrapper-item:nth-child(7),
+          .product-wrapper-item:nth-child(9) {
+            flex-basis: calc((100% - 16px) / 2);
+          }
+        }
+      </style>
+    </div>
+
+    <section class="section product">
+      <div class="product-page-grid">
+        <div
+          class="block-sticky"
+          id="layout-node-f98ff4f3-d2a7-cac1-973f-e6ce546f033e-ac723d3b"
+        >
+          <div class="category-wrapper collection-list">
+            <div class="category-list collection-items" role="list">
+              <div class="category-item collection-item" role="listitem">
+                <h3 data-product-category></h3>
+              </div>
+            </div>
+          </div>
+          <h1 data-product-title></h1>
+          <p data-product-description></p>
+          <div class="rich-text rich-text">
+            <p data-product-details></p>
+            <p data-product-closing></p>
+          </div>
+        </div>
+
+        <div
+          class="product-images"
+          id="layout-node-_4bd72972-e414-4f87-d380-294bea47f68b-ac723d3b"
+        >
+          <div class="product-images-item">
+            <img
+              alt=""
+              class="product-image-full"
+              data-product-main-image
+              loading="lazy"
+              src=""
+            />
+          </div>
+          <div
+            class="product-images-container collection-list collection-items-repeater-ref"
+          >
+            <div
+              class="product-images-list collection-items"
+              data-product-image-list
+              role="list"
+            ></div>
+            <div class="is-hidden empty-state"><div>No items found.</div></div>
+          </div>
+        </div>
+
+        <div
+          class="block-sticky"
+          id="layout-node-d48ad1fd-b11e-7ea5-d4c7-7e6f4304c96f-ac723d3b"
+        >
+          <div class="product-text">
+            <p class="strikethrough is-empty" data-product-compare-price></p>
+            <p data-product-price></p>
+          </div>
+          <div class="space _16px"></div>
+          <div class="add-to-cart">
+            <form
+              class="shop-addtocartform default-state"
+              data-loading-text="Adding to cart..."
+            >
+              <div
+                class="options"
+                data-preselect-default-variant="false"
+                role="group"
+              >
+                <div class="option" role="group">
+                  <select
+                    class="select-field select-control"
+                    data-product-size-select
+                    required
+                  >
+                    <option selected value="">Select Size</option>
+                  </select>
+                </div>
+              </div>
+              <label class="label-hidden">Quantity</label
+              ><input
+                aria-busy="false"
+                aria-haspopup="dialog"
+                class="shop-addtocartbutton add-to-cart-button"
+                data-loading-text="Adding to cart..."
+                type="submit"
+                value="Add to Cart"
+              /><a
+                aria-busy="false"
+                aria-haspopup="false"
+                class="shop-buynowbutton buy-now-button"
+                data-default-text="Buy now"
+                data-subscription-text="Subscribe now"
+                href="../index.html"
+                style="display: none"
+                >Buy now</a
+              >
+            </form>
+            <div
+              class="shop-addtocartoutofstock"
+              style="display: none"
+              tabindex="0"
+            >
+              <div>This product is out of stock.</div>
+            </div>
+            <div
+              aria-live="assertive"
+              class="shop-addtocarterror"
+              style="display: none"
+            >
+              <div>Product is not available in this quantity.</div>
+            </div>
+          </div>
+          <div class="space _24px"></div>
+          <h6 class="light-text" data-product-shipping></h6>
+        </div>
+      </div>
+    </section>
+
+    <div data-shared-layout="footer"></div>
+
+    <script src="../assets/js/site.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const productId = params.get("id");
+
+      const setText = (selector, value) => {
+        const element = document.querySelector(selector);
+        if (element) {
+          element.textContent = value || "";
+        }
+      };
+
+      const showError = (message) => {
+        setText("[data-product-title]", message);
+        setText(
+          "[data-product-description]",
+          "Please go back to the store page and choose a product."
+        );
+      };
+
+      const toAssetPath = (path) => {
+        if (!path || /^https?:\/\//i.test(path) || path.startsWith("../")) {
+          return path || "";
+        }
+
+        return `../${path}`;
+      };
+
+      const renderProduct = (product) => {
+        document.title = `${product.title} | Widhi Asih Bali Export`;
+
+        setText("[data-product-category]", product.category);
+        setText("[data-product-title]", product.title);
+        setText("[data-product-description]", product.description);
+        setText("[data-product-closing]", product.closingText);
+        setText("[data-product-price]", product.price);
+        setText("[data-product-shipping]", product.shippingNote);
+
+        const comparePrice = document.querySelector(
+          "[data-product-compare-price]"
+        );
+        if (comparePrice) {
+          comparePrice.textContent = product.compareAtPrice || "";
+          comparePrice.classList.toggle("is-empty", !product.compareAtPrice);
+        }
+
+        const mainImage = document.querySelector("[data-product-main-image]");
+        if (mainImage) {
+          mainImage.src = toAssetPath(product.image);
+          mainImage.alt = product.title;
+        }
+
+        const details = document.querySelector("[data-product-details]");
+        if (details) {
+          details.innerHTML = (product.details || [])
+            .map((detail) => `&bull; ${detail}`)
+            .join("<br />");
+        }
+
+        const imageList = document.querySelector("[data-product-image-list]");
+        if (imageList) {
+          imageList.innerHTML = "";
+          (product.images || [product.image]).forEach((image) => {
+            const item = document.createElement("div");
+            item.className =
+              "product-images-item collection-item collection-repeater-item";
+            item.setAttribute("role", "listitem");
+
+            const img = document.createElement("img");
+            img.alt = product.title;
+            img.className = "product-image-full";
+            img.loading = "lazy";
+            img.src = toAssetPath(image);
+
+            item.appendChild(img);
+            imageList.appendChild(item);
+          });
+        }
+
+        const sizeSelect = document.querySelector("[data-product-size-select]");
+        if (sizeSelect) {
+          (product.sizes || []).forEach((size) => {
+            const option = document.createElement("option");
+            option.value = size.toLowerCase().replace(/\s+/g, "-");
+            option.textContent = size;
+            sizeSelect.appendChild(option);
+          });
+        }
+      };
+
+      if (!productId) {
+        showError("Product not found");
+      } else {
+        fetch("../products.json")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Unable to load products.json");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            const products = Array.isArray(data) ? data : data.products || [];
+            const product = products.find((item) => item.id === productId);
+
+            if (!product) {
+              showError("Product not found");
+              return;
+            }
+
+            renderProduct(product);
+          })
+          .catch(() => {
+            showError("Product data could not be loaded");
+          });
+      }
+    </script>
+  </body>
+</html>

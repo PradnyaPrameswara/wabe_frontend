@@ -1,0 +1,244 @@
+{
+  "products": [
+    {
+      "id": "aurora-tea-mug",
+      "title": "Aurora Tea Mug",
+      "category": "Sunrise Symphony",
+      "price": "$ 50.00 USD",
+      "compareAtPrice": "$ 65.00 USD",
+      "image": "assets/media/6576f14bb6f27bd61de934d9_Product_placeholder_image_01.jpg",
+      "images": [
+        "assets/media/6576f14bb6f27bd61de934d9_Product_placeholder_image_01.jpg",
+        "assets/media/6576f14bb6f27bd61de934d9_Product_placeholder_image_01.jpg",
+        "assets/media/6576f14bb6f27bd61de934d9_Product_placeholder_image_01.jpg"
+      ],
+      "description": "Introducing the Aurora Tea Mug, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "cascade-water-pitcher",
+      "title": "Cascade Water Pitcher",
+      "category": "Rustic Elegance",
+      "price": "$ 65.00 USD",
+      "compareAtPrice": "",
+      "image": "assets/media/6a2680f03f3745a0ac723d97_Placeholder_image_09.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d97_Placeholder_image_09.jpg",
+        "assets/media/6a2680f03f3745a0ac723d97_Placeholder_image_09.jpg",
+        "assets/media/6a2680f03f3745a0ac723d97_Placeholder_image_09.jpg"
+      ],
+      "description": "Introducing the Cascade Water Pitcher, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "celestial-serving-platter",
+      "title": "Celestial Serving Platter",
+      "category": "Mystic Garden",
+      "price": "$ 60.00 USD",
+      "compareAtPrice": "",
+      "image": "assets/media/6a2680f03f3745a0ac723d78_Product_placeholder_image_02.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d78_Product_placeholder_image_02.jpg",
+        "assets/media/6a2680f03f3745a0ac723d78_Product_placeholder_image_02.jpg",
+        "assets/media/6a2680f03f3745a0ac723d78_Product_placeholder_image_02.jpg"
+      ],
+      "description": "Introducing the Celestial Serving Platter, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "eclipse-coffee-cup",
+      "title": "Eclipse Coffee Cup",
+      "category": "Sunrise Symphony",
+      "price": "$ 25.00 USD",
+      "compareAtPrice": "$ 65.00 USD",
+      "image": "assets/media/6a2680f03f3745a0ac723d7b_Product_placeholder_image_06.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d7b_Product_placeholder_image_06.jpg",
+        "assets/media/6a2680f03f3745a0ac723d7b_Product_placeholder_image_06.jpg",
+        "assets/media/6a2680f03f3745a0ac723d7b_Product_placeholder_image_06.jpg"
+      ],
+      "description": "Introducing the Eclipse Coffee Cup, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "eden-flower-vase",
+      "title": "Eden Flower Vase",
+      "category": "Whispering Earth",
+      "price": "$ 59.00 USD",
+      "compareAtPrice": "$ 65.00 USD",
+      "image": "assets/media/6a2680f03f3745a0ac723d79_Product_placeholder_image_03.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d79_Product_placeholder_image_03.jpg",
+        "assets/media/6a2680f03f3745a0ac723d79_Product_placeholder_image_03.jpg",
+        "assets/media/6a2680f03f3745a0ac723d79_Product_placeholder_image_03.jpg"
+      ],
+      "description": "Introducing the Eden Flower Vase, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "harmony-dinner-plate",
+      "title": "Harmony Dinner Plate",
+      "category": "Sunrise Symphony",
+      "price": "$ 150.00 USD",
+      "compareAtPrice": "",
+      "image": "assets/media/6a2680f03f3745a0ac723d96_Product_placeholder_image_10.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d96_Product_placeholder_image_10.jpg",
+        "assets/media/6a2680f03f3745a0ac723d96_Product_placeholder_image_10.jpg",
+        "assets/media/6a2680f03f3745a0ac723d96_Product_placeholder_image_10.jpg"
+      ],
+      "description": "Introducing the Harmony Dinner Plate, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "meadow-dessert-plate",
+      "title": "Meadow Dessert Plate",
+      "category": "Sunrise Symphony",
+      "price": "$ 49.00 USD",
+      "compareAtPrice": "$ 65.00 USD",
+      "image": "assets/media/6a2680f03f3745a0ac723d7c_Product_placeholder_image_07.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d7c_Product_placeholder_image_07.jpg",
+        "assets/media/6a2680f03f3745a0ac723d7c_Product_placeholder_image_07.jpg",
+        "assets/media/6a2680f03f3745a0ac723d7c_Product_placeholder_image_07.jpg"
+      ],
+      "description": "Introducing the Meadow Dessert Plate, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "nebula-salad-bowl",
+      "title": "Nebula Salad Bowl",
+      "category": "Sunrise Symphony",
+      "price": "$ 49.00 USD",
+      "compareAtPrice": "$ 65.00 USD",
+      "image": "assets/media/6a2680f03f3745a0ac723d94_Product_placeholder_image_08.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d94_Product_placeholder_image_08.jpg",
+        "assets/media/6a2680f03f3745a0ac723d94_Product_placeholder_image_08.jpg",
+        "assets/media/6a2680f03f3745a0ac723d94_Product_placeholder_image_08.jpg"
+      ],
+      "description": "Introducing the Nebula Salad Bowl, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "serenity-soup-bowl",
+      "title": "Serenity Soup Bowl",
+      "category": "Tranquil Ripples",
+      "price": "$ 49.00 USD",
+      "compareAtPrice": "$ 65.00 USD",
+      "image": "assets/media/6a2680f03f3745a0ac723d7a_Product_placeholder_image_05.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d7a_Product_placeholder_image_05.jpg",
+        "assets/media/6a2680f03f3745a0ac723d7a_Product_placeholder_image_05.jpg",
+        "assets/media/6a2680f03f3745a0ac723d7a_Product_placeholder_image_05.jpg"
+      ],
+      "description": "Introducing the Serenity Soup Bowl, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    },
+    {
+      "id": "whimsy-candle-holder",
+      "title": "Whimsy Candle Holder",
+      "category": "Whispering Earth",
+      "price": "$ 120.00 USD",
+      "compareAtPrice": "",
+      "image": "assets/media/6a2680f03f3745a0ac723d95_Product_placeholder_image_09.jpg",
+      "images": [
+        "assets/media/6a2680f03f3745a0ac723d95_Product_placeholder_image_09.jpg",
+        "assets/media/6a2680f03f3745a0ac723d95_Product_placeholder_image_09.jpg",
+        "assets/media/6a2680f03f3745a0ac723d95_Product_placeholder_image_09.jpg"
+      ],
+      "description": "Introducing the Whimsy Candle Holder, a stunning addition to your tableware collection. Crafted with the utmost care and attention to detail, this piece not only serves its function but also adds a touch of elegance to your daily routine.",
+      "details": [
+        "High-quality ceramic, kiln-fired for durability.",
+        "Dimensions: 40 x 20 x 5 inches.",
+        "Capacity: 200 ml.",
+        "Weight: 50 g.",
+        "Shipping: Ships worldwide. Delivery times vary based on location."
+      ],
+      "closingText": "Elevate your dining experience with the bowl, where functionality meets artistry.",
+      "sizes": ["Small", "Medium", "Large"],
+      "shippingNote": "Free shipping on orders over $200 USD and free returns on all orders."
+    }
+  ]
+}
