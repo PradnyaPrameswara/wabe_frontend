@@ -1,0 +1,164 @@
+[
+  {
+    "name": "At Home",
+    "url": "https://www.athome.com/",
+    "candidates": [],
+    "favicon": null
+  },
+  {
+    "name": "Banana Republic",
+    "url": "https://bananarepublic.gap.com/",
+    "candidates": [],
+    "favicon": null
+  },
+  {
+    "name": "Bloomingville",
+    "url": "https://www.bloomingville.com/en",
+    "candidates": [
+      "https://cdn.bloomingville.com/admin/public/getimage.ashx?Image=/Files/Images/Web/Logo/Bloomingville-Multibrand-House-logo.png&Width=1920&Height=1920&Format=png&Quality=75&Crop=4",
+      "/Files/Templates/Designs/bloomingville/_assets/img/logo.svg",
+      "/Files/Templates/Designs/bloomingville/_assets/img/Creative-Collection-logo_black.svg",
+      "/Files/Templates/Designs/bloomingville/_assets/img/illume_logo.svg",
+      "/Files/Templates/Designs/bloomingville/_assets/img/Logo_MINI_new2.svg",
+      "/Files/Templates/Designs/bloomingville/_assets/img/BV_Multibrandhouse.svg",
+      "/Files/Templates/Designs/bloomingville/_assets/img/BV_Multibrandhouse.svg"
+    ],
+    "favicon": "/Files/Templates/Designs/bloomingville/_assets/img/favicon.png"
+  },
+  {
+    "name": "Burlington",
+    "url": "https://www.burlington.com/",
+    "candidates": [
+      "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fburlington-logo.1a7f14c5.png&amp;w=384&amp;q=75",
+      "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fburlington-logo.1a7f14c5.png&amp;w=384&amp;q=75"
+    ],
+    "favicon": "/apple-icon.png?a2eab00f1dd62f07"
+  },
+  {
+    "name": "Creative Co-Op",
+    "url": "https://www.creativecoop.com/",
+    "candidates": [],
+    "favicon": null
+  },
+  {
+    "name": "E-Jumbo",
+    "url": "https://www.e-jumbo.gr/",
+    "candidates": [],
+    "favicon": null
+  },
+  {
+    "name": "HomeGoods",
+    "url": "https://www.homegoods.com/",
+    "candidates": [
+      "/img/icons-logos/tjmaxx-active.svg",
+      "/img/icons-logos/marshalls-active.svg",
+      "/img/icons-logos/homegoods.svg",
+      "/img/icons-logos/sierra-active.svg",
+      "/img/icons-logos/homesense-active.svg",
+      "/img/icons-logos/icon-instagram.svg",
+      "/img/icons-logos/icon-instagram-hover.svg",
+      "/img/icons-logos/icon-pinterest.svg",
+      "/img/icons-logos/icon-pinterest-hover.svg",
+      "/img/icons-logos/icon-facebook.svg",
+      "/img/icons-logos/icon-facebook-hover.svg",
+      "/img/icons-logos/icon-threads.svg",
+      "/img/icons-logos/icon-threads-hover.svg",
+      "/img/icons-logos/icon-tiktok.svg",
+      "/img/icons-logos/icon-tiktok-hover.svg",
+      "/img/icons-logos/homegoods.svg",
+      "/img/icons-logos/homegoods.svg",
+      "/img/icons-logos/icon-gray-large-arrow.svg",
+      "/img/icons-logos/icon-instagram.svg",
+      "/img/icons-logos/icon-instagram-hover.svg",
+      "/img/icons-logos/icon-pinterest.svg",
+      "/img/icons-logos/icon-pinterest-hover.svg",
+      "/img/icons-logos/icon-facebook.svg",
+      "/img/icons-logos/icon-facebook-hover.svg",
+      "/img/icons-logos/icon-threads.svg",
+      "/img/icons-logos/icon-threads-hover.svg",
+      "/img/icons-logos/icon-tiktok.svg",
+      "/img/icons-logos/icon-tiktok-hover.svg",
+      "/img/icons-logos/icon-white-arrow.svg",
+      "/img/icons-logos/tjmaxx-active.svg",
+      "/img/icons-logos/marshalls-active.svg",
+      "/img/icons-logos/homegoods.svg",
+      "/img/icons-logos/sierra-active.svg",
+      "/img/icons-logos/homesense-active.svg"
+    ],
+    "favicon": "/img/favicon.ico"
+  },
+  {
+    "name": "Koopman International",
+    "url": "https://www.koopmanint.com/en/",
+    "candidates": [
+      "https://www.koopmanint.com/wp-content/themes/Koopman/images/logo.png",
+      "https://www.koopmanint.com/wp-content/themes/Koopman/images/logo.png",
+      "https://www.koopmanint.com/wp-content/uploads/2024/04/KI_logo_better_cotton-510x288.jpg",
+      "https://www.koopmanint.com/wp-content/uploads/2024/04/KI_logo_better_cotton-510x288.jpg",
+      "https://www.koopmanint.com/wp-content/uploads/2018/09/logo1-1.png",
+      "https://www.koopmanint.com/wp-content/uploads/2018/09/logo1-1.png",
+      "https://www.koopmanint.com/wp-content/uploads/2018/09/amfori-logo-1.png",
+      "https://www.koopmanint.com/wp-content/uploads/2018/09/amfori-logo-1.png",
+      "https://www.koopmanint.com/wp-content/uploads/2018/09/logo3-1.png",
+      "https://www.koopmanint.com/wp-content/uploads/2018/09/logo3-1.png",
+      "https://www.koopmanint.com/wp-content/themes/Koopman/images/logo.jpg"
+    ],
+    "favicon": "https://www.koopmanint.com/wp-content/uploads/2018/10/cropped-favicon32x32-180x180.png"
+  },
+  {
+    "name": "McGee & Co.",
+    "url": "https://www.mcgeeandco.com/",
+    "candidates": [
+      "//www.mcgeeandco.com/cdn/shop/files/mcgee-logo.svg?v=1676646646&amp;width=186",
+      "//www.mcgeeandco.com/cdn/shop/files/SM_McGee_Co-Logo.png?v=1717800455&amp;width=707",
+      "https://cdn.shopify.com/s/files/1/1496/0124/files/SM_McGee_Co-Logo.png?v=1717800455"
+    ],
+    "favicon": "//www.mcgeeandco.com/cdn/shop/files/Favicon_1.png?v=1614295404&width=180"
+  },
+  {
+    "name": "Posiwio",
+    "url": "https://www.posiwio.de/",
+    "candidates": [
+      "files/posiwio/images/logo.png"
+    ],
+    "favicon": "images/favicon.ico"
+  },
+  {
+    "name": "Thomas Philipps",
+    "url": "https://www.thomas-philipps.de/",
+    "candidates": [
+      "https://www.thomas-philipps.de/media/3a/d4/bd/1772007580/new-tp-logo.svg",
+      "https://www.thomas-philipps.de/media/3a/d4/bd/1772007580/new-tp-logo.svg",
+      "https://www.thomas-philipps.de/media/c6/75/60/1749798346/16801063_Landmann_Logo_print.jpg.png",
+      "https://www.thomas-philipps.de/media/14/36/0c/1677481718/Logo-Gruener-Jan.png",
+      "https://www.thomas-philipps.de/media/81/cf/3e/1660735529/Logo-Gartenauflagen.png",
+      "https://www.thomas-philipps.de/media/83/95/5d/1660735529/SunnyMoments_Logo.png",
+      "https://www.thomas-philipps.de/media/36/f6/54/1660735529/NewHome_Logo.png",
+      "https://www.thomas-philipps.de/media/99/13/bb/1660735529/skive-logo.png",
+      "https://www.thomas-philipps.de/media/84/e1/ce/1679035258/keona_logo_146x86.jpg",
+      "https://www.thomas-philipps.de/media/5c/4c/a6/1677678793/TAS-Electronics-Logo2.png",
+      "https://www.thomas-philipps.de/media/c7/c4/94/1677678788/TP-Auto-Logo.png",
+      "https://www.thomas-philipps.de/media/1c/dc/34/1677678961/newhome-christmas-logo.png",
+      "https://www.thomas-philipps.de/media/14/36/0c/1677481718/Logo-Gruener-Jan.png",
+      "https://www.thomas-philipps.de/media/81/cf/3e/1660735529/Logo-Gartenauflagen.png",
+      "https://www.thomas-philipps.de/media/83/95/5d/1660735529/SunnyMoments_Logo.png",
+      "https://www.thomas-philipps.de/media/36/f6/54/1660735529/NewHome_Logo.png",
+      "https://www.thomas-philipps.de/media/99/13/bb/1660735529/skive-logo.png",
+      "https://www.thomas-philipps.de/media/84/e1/ce/1679035258/keona_logo_146x86.jpg",
+      "https://www.thomas-philipps.de/media/c7/c4/94/1677678788/TP-Auto-Logo.png",
+      "https://www.thomas-philipps.de/media/5c/4c/a6/1677678793/TAS-Electronics-Logo2.png",
+      "https://www.thomas-philipps.de/media/1c/dc/34/1677678961/newhome-christmas-logo.png"
+    ],
+    "favicon": "https://www.thomas-philipps.de/media/75/f7/0a/1678260128/favicon.ico"
+  },
+  {
+    "name": "TJX",
+    "url": "https://www.tjx.com/",
+    "candidates": [
+      "/ResourcePackages/Bootstrap5/assets/dist/images/tjx-logo-mobile.svg",
+      "/ResourcePackages/Bootstrap5/assets/dist/images/tjx-logo-mobile.svg",
+      "/ResourcePackages/Bootstrap5/assets/dist/images/tjx-logo-mobile-white.svg"
+    ],
+    "favicon": "/ResourcePackages/Bootstrap5/assets/dist/css/bootstrap-icons.css"
+  }
+]
