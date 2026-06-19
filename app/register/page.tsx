@@ -45,7 +45,7 @@ export default function RegisterPage() {
                 <label className="auth-field-label" htmlFor="register-company">
                   Company
                 </label>
-                <input className="input-control" id="register-company" name="company" placeholder="Your company name (optional)" type="text" />
+                <input className="input-control" id="register-company" name="company" placeholder="Your company name*" type="text" />
               </div>
               <div className="auth-field auth-password-field">
                 <label className="auth-field-label" htmlFor="register-password">

@@ -10,18 +10,18 @@ const media = (fileName: string) => `/media/${fileName}`;
 
 export const categories: Category[] = [
   {
-    slug: "mystic-garden",
-    name: "Mystic Garden",
+    slug: "rattan-2025",
+    name: "Rattan 2025",
     cta: "Shop The Range",
-    image: media("6a2680f03f3745a0ac723d9e_Catergoy_image_placeholder_01.jpg"),
+    image: media("6a2680f03f3745a0ac723d7a_Product_placeholder_image_05.jpg"),
     description:
-      "Layered ceramic forms, botanical details, and soft silhouettes for calm retail stories."
+      "Handcrafted rattan pieces for authentic Balinese aesthetics and warm settings."
   },
   {
-    slug: "rustic-elegance",
-    name: "Rustic Elegance",
+    slug: "terracotta-2025",
+    name: "Terracotta 2025",
     cta: "Explore Collection",
-    image: media("6a2680f03f3745a0ac723d9f_Catergoy_image_placeholder_04.jpg"),
+    image: media("6a2680f03f3745a0ac723d95_Product_placeholder_image_09.jpg"),
     description:
       "Earthy textures and grounded profiles shaped for warm hospitality and home settings."
   },

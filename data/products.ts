@@ -129,8 +129,8 @@ export const products: Product[] = [
   {
     slug: "celestial-serving-platter",
     name: "Celestial Serving Platter",
-    categorySlug: "mystic-garden",
-    categoryName: "Mystic Garden",
+    categorySlug: "rattan-2025",
+    categoryName: "Rattan 2025",
     collection: "Latest",
     image: {
       alt: "Celestial Serving Platter",
@@ -157,8 +157,8 @@ export const products: Product[] = [
   {
     slug: "cascade-water-pitcher",
     name: "Cascade Water Pitcher",
-    categorySlug: "rustic-elegance",
-    categoryName: "Rustic Elegance",
+    categorySlug: "terracotta-2025",
+    categoryName: "Terracotta 2025",
     collection: "Latest",
     image: {
       alt: "Cascade Water Pitcher",
@@ -342,8 +342,8 @@ export const products: Product[] = [
   {
     slug: "terra-bread-plate",
     name: "Terra Bread Plate",
-    categorySlug: "rustic-elegance",
-    categoryName: "Rustic Elegance",
+    categorySlug: "terracotta-2025",
+    categoryName: "Terracotta 2025",
     collection: "Latest",
     image: {
       alt: "Terra Bread Plate",
@@ -396,8 +396,8 @@ export const products: Product[] = [
   {
     slug: "bloom-incense-holder",
     name: "Bloom Incense Holder",
-    categorySlug: "mystic-garden",
-    categoryName: "Mystic Garden",
+    categorySlug: "rattan-2025",
+    categoryName: "Rattan 2025",
     collection: "Latest",
     image: {
       alt: "Bloom Incense Holder",
@@ -477,8 +477,8 @@ export const products: Product[] = [
   {
     slug: "haven-spice-jar",
     name: "Haven Spice Jar",
-    categorySlug: "rustic-elegance",
-    categoryName: "Rustic Elegance",
+    categorySlug: "terracotta-2025",
+    categoryName: "Terracotta 2025",
     collection: "Latest",
     image: {
       alt: "Haven Spice Jar",
@@ -526,8 +526,8 @@ export const products: Product[] = [
   {
     slug: "ridge-oil-cruet",
     name: "Ridge Oil Cruet",
-    categorySlug: "mystic-garden",
-    categoryName: "Mystic Garden",
+    categorySlug: "rattan-2025",
+    categoryName: "Rattan 2025",
     collection: "Latest",
     image: {
       alt: "Ridge Oil Cruet",

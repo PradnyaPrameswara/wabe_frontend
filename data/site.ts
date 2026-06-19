@@ -1,11 +1,12 @@
+import { products } from "./products";
+
 export const site = {
   name: "Widhi Asih Bali Export",
-  announcement: "Cyber Monday Featured: Mystic Garden",
+  announcement: `New Arrival: ${products[products.length - 1].name}`,
   welcome: "Welcome to Widhi Asih Bali Export",
-  email: "help@widhiasihbaliexport.com",
-  pressEmail: "press@widhiasihbaliexport.com",
-  phone: "+61 234 567 89",
-  address: "800 Hammersmith Street, Melbourne, VIC 3000",
+  email: "info@widhiasihbaliexport.com",
+  phone: "+62 361 953 239 (Bali Time: GMT+8)",
+  address: "Jl. Ratna No.68, Tegal Tugu, Gianyar, Bali, Indonesia",
   baliAddress: "Jl. Ratna No. 68, Tegal Tugu, Gianyar, Bali, Indonesia"
 };
 

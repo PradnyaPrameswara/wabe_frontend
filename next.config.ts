@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
       })),
       {
         source: "/category/category-detail.html",
-        destination: "/category/mystic-garden",
+        destination: "/category/rattan-2025",
         permanent: true
       },
       {

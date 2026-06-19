@@ -19,7 +19,7 @@ const topRowClients: ClientLogo[] = [
   {
     name: "Banana Republic",
     href: "https://bananarepublic.gap.com/",
-    logo: "https://bananarepublic.gap.com/Asset_Archive/BRWeb/content/0016/264/099/assets/BR_Logo_black.svg"
+    logo: "https://commons.wikimedia.org/wiki/Special:FilePath/Banana_Republic.svg"
   },
   {
     name: "Bloomingville",

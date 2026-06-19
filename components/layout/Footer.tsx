@@ -24,25 +24,25 @@ export function Footer() {
           <div className="block">
             <h6>OPEN</h6>
             <div>
-              MON-SAT - 10:00AM - 6:00PM
+              Monday - Friday: 8 AM - 5 PM
               <br />
-              SUNDAYS - 12:00PM - 5:00PM
+              Saturday - Sunday: Closed
             </div>
           </div>
           <div className="block">
             <h6>CONTACT</h6>
-            <Link className="footer-link inline-block" href="/legal/privacy-and-cookies">
-              <div>{site.phone}</div>
-            </Link>
-            <Link className="footer-link inline-block" href="/legal/privacy-and-cookies">
-              <div>{site.email}</div>
-            </Link>
-          </div>
-          <div className="block">
-            <h6>PRESS</h6>
-            <Link className="footer-link inline-block" href="/legal/privacy-and-cookies">
-              <div>{site.pressEmail}</div>
-            </Link>
+            <div>
+              {site.phone}
+              <br />
+              <a 
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${site.email}`} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="footer-link"
+              >
+                {site.email}
+              </a>
+            </div>
           </div>
         </div>
         <div className="footer-item" id="layout-node-fa5bfe3e-4fa7-52ea-83f5-221f6a7851ad-6a78518e">

@@ -79,7 +79,7 @@ export default function ContactPage() {
               </div>
               <div className="custom-contact-field">
                 <label htmlFor="contact-company">Company</label>
-                <input className="input-control" id="contact-company" name="company" placeholder="Your company name (optional)" type="text" />
+                <input className="input-control" id="contact-company" name="company" placeholder="Your company name*" type="text" />
               </div>
               <div className="custom-contact-field">
                 <label htmlFor="contact-message">Message</label>
